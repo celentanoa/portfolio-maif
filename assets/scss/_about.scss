@@ -103,4 +103,10 @@
     .section-box {
         max-width: 100%;
     }
+
+    .about-row {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
 }

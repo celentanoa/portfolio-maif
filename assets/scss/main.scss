@@ -120,6 +120,20 @@ body {
         padding: 0.8rem 1.5rem; // Riduci il padding del pulsante
     }
 
+}
 
+@media (max-width: 480px) {
+    .landing-hero .content h1 {
+        font-size: 1.8rem;
+    }
 
+    .description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1.Benvenuto {
+        font-size: 2.2rem;
+    }
 }
