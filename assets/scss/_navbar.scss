@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #F7F3E9;
+    font-family: $secondary-font;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); // Linea sottile grigia 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-toggler {
+    border: none; // Rimuove il bordo di default 
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.2s ease, letter-spacing 0.3s ease;
+
+    &:hover {
+        color: #81B29A;
+        transform: translateY(-2px);
+        letter-spacing: 1px; // Aumenta spaziatura su hover 
+    }
+}
+
+.nav-link.active {
+    color: #81B29A;
+    /* Mantiene il colore dell'accento */
+    font-weight: bold;
+    /* Distingue visivamente il link attivo */
+    border-bottom: 2px solid #81B29A;
+    /* Aggiunge una linea sotto il link attivo */
+    cursor: default;
+    /* Indica che il link è già attivo */
+}

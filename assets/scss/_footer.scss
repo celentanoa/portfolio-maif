@@ -1,0 +1,28 @@
+@import '_variables.scss';
+
+.footer {
+    background-color: rgba(75, 68, 83, 0.6);
+    color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    font-family: $secondary-font;
+}
+
+.social-links {
+    margin-top: 10px;
+    /* Spazio tra il testo e i link */
+}
+
+.social-links a {
+    margin: 0 10px;
+    /* Distanza tra i link */
+    color: $background-color;
+    /* Colore dei link */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: $accent-color;
+    /* Colore al passaggio del mouse */
+    transition: color 0.3s ease;
+}

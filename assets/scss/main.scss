@@ -1,0 +1,125 @@
+@import '_variables.scss';
+@import'_navbar.scss';
+@import '_footer.scss';
+@import '_about.scss';
+@import '_cv.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    scroll-behavior: smooth;
+}
+
+/* Landing Page Styles */
+
+.landing-hero {
+    background-image: url('../img/Landing2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.Benvenuto {
+    font-family: $primary-font;
+    font-size: 5rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 4rem;
+
+    animation: fadeIn 2s ease-in-out;
+
+
+    &:hover {
+        color: $accent-color; // Cambia colore al passaggio del mouse
+        transform: scale(1.1); // Leggera espansione
+        transition: all 0.3s ease-in-out;
+    }
+
+    // Animazione di comparsa
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.description {
+    font-family: $secondary-font;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: $primary-color;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    background-color: $accent-color;
+    color: $primary-color;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+
+    &:hover {
+        background-color: $cta-hover;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .landing-hero {
+        background-image: url('../img/Landing2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .Benvenuto {
+        font-size: 3rem; // Riduci la dimensione del testo per schermi piccoli
+        margin-left: 0; // Rimuovi il margine sinistro
+    }
+
+    .description {
+        font-size: 1.2rem; // Riduci la dimensione del testo per schermi piccoli
+    }
+
+    .cta-button {
+        font-size: 1.2rem; // Riduci la dimensione del testo per il pulsante
+        padding: 0.8rem 1.5rem; // Riduci il padding del pulsante
+    }
+
+
+
+}

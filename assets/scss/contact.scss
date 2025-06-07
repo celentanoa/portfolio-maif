@@ -1,0 +1,72 @@
+@import '_variables.scss';
+@import '_navbar.scss';
+@import '_footer.scss';
+
+body {
+    background: $background-color;
+    font-family: 'Lato', sans-serif;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: $background-color;
+
+    h2 {
+        font-family: $primary-font;
+        font-size: 2.5rem;
+        color: $primary-color;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-form {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        transition: border-color 0.3s ease; // Transizione al focus 
+
+
+        input,
+        textarea {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 15px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            display: block;
+            transition: border-color 0.3s ease;
+        }
+
+        // Quando un campo è in focus 
+        input:focus,
+        textarea:focus {
+            border-color: $accent-color;
+            outline: none;
+        }
+
+        // Quando il modulo è in focus (per modificare il bordo esterno) 
+        &:focus-within {
+            border-color: $accent-color;
+        }
+
+        button {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: $accent-color;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($accent-color, 10%);
+            }
+        }
+    }
+}
