@@ -459,7 +459,25 @@ body {
   }
 }
 @media (max-width: 1024px) {
-  h1.Benvenuto {
+  .Benvenuto {
     font-size: 2.2rem;
+  }
+  .about-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-box {
+    max-width: 100%;
+  }
+  .cv-container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .navbar .navbar-nav {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .landing-hero .cta-button {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
