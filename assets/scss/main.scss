@@ -178,3 +178,49 @@ body {
         margin-bottom: 1rem;
     }
 }
+
+/* 🔧 iPad Air Portrait (max-width: 880px) */
+@media (max-width: 880px) {
+    .about-row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-box {
+        max-width: 100%;
+    }
+
+    .cv-container {
+        max-width: 90%;
+        padding: 2rem 1rem;
+        margin: 0 auto;
+    }
+
+    .Benvenuto {
+        font-size: 2.4rem;
+        margin-left: 1rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .cta-button,
+    .cta-cv {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .skills-list li {
+        font-size: 1rem;
+    }
+
+    .footer .social-links {
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
