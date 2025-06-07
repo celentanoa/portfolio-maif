@@ -482,7 +482,7 @@ body {
   }
 }
 /* 🔧 iPad Air Portrait (max-width: 880px) */
-@media (max-width: 880px) {
+@media (max-width: 780px) {
   .about-row {
     flex-direction: column;
     gap: 2rem;
@@ -496,7 +496,7 @@ body {
     margin: 0 auto;
   }
   .Benvenuto {
-    font-size: 2.4rem;
+    font-size: 3rem;
     margin-left: 1rem;
   }
   .description {
